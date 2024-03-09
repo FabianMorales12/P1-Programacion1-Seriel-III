@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("¡Bienvenido!");
+
+        
+        Console.Write("0.60: ");
+        int precio1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("0.78: ");
+        int precio2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("98.00: ");
+        int precio3 = Convert.ToInt32(Console.ReadLine());
+
+        /
+        int total = precio1 + precio2 + precio3;
+
+        
+        int totalConDescuento = total > 500 ? total - (total * 10 / 100) : total;
+
+        Console.WriteLine($"El total de los productos es: {totalConDescuento} centavos.");
+    }
+}
